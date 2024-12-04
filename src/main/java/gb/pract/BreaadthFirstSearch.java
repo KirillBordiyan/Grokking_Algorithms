@@ -25,17 +25,23 @@ public class BreaadthFirstSearch {
         Queue<String> queue = new ArrayDeque<>(map.get(name));
         ArrayList<String> searched = new ArrayList<>();
 
+        int maxLenghtToFindSellerIfExist = 0;
+
         while (!queue.isEmpty()) {
             String person = queue.poll();
+            maxLenghtToFindSellerIfExist++;
             if (!searched.contains(person)) {
                 System.out.println(person);
                 System.out.println(searched);
                 if (isPersonSeller(person)) {
                     System.out.print(person + " is seller. Got it!");
+
+                    System.out.println(maxLenghtToFindSellerIfExist);
                     return true;
                 } else {
                     queue.addAll(map.get(person));
                     searched.add(person);
+                    maxLenghtToFindSellerIfExist--;
                 }
             }
         }
