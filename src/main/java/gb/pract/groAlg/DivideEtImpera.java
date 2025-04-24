@@ -1,4 +1,4 @@
-package gb.pract;
+package gb.pract.groAlg;
 
 public class DivideEtImpera {
     /**

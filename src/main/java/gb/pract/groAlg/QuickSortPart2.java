@@ -1,8 +1,6 @@
-package gb.pract;
+package gb.pract.groAlg;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class QuickSortPart2 {
     public static void main(String[] args) {

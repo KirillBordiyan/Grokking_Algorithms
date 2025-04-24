@@ -1,6 +1,5 @@
-package gb.pract;
+package gb.pract.groAlg;
 
-import java.io.BufferedWriter;
 import java.util.Arrays;
 
 public class QuickSort {
